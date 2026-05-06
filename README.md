@@ -181,11 +181,3 @@ Acompanhar no GA4 + Meta Events Manager:
 - [ ] Open Graph tags completas pra compartilhamento social
 - [ ] JSON-LD schema (Organization + FAQPage)
 
----
-
-## 👥 Créditos
-
-Desenvolvido por **[Dros Agência](https://drosagencia.com.br)** — agência de marketing digital orientada por dados. Estratégia, copy, design, dev e tracking integrados.
-
-📞 Contato Oxiquímica: (35) 99714-8855 · contato@oxiquimicavarginha.com.br
-📍 Av. Dr. Módena, 723 — Fátima, Varginha/MG
