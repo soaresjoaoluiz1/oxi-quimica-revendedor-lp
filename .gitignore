@@ -1,0 +1,19 @@
+# Pastas geradas pelo servidor (não commitar)
+.well-known/
+cgi-bin/
+
+# Versão antiga (backup local)
+old/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Editor swap
+*.swp
+*~

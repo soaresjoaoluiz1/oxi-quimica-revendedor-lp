@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Realizado | Oxiquímica Varginha</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Meta Pixel Code - OXIQUIMICA SITE -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/pt_BR/fbevents.js');
+
+  fbq('init', '387506053330342');
+  fbq('track', 'PageView');
+
+  /* Lead event — usa o eventID vindo do submit (?eid=...) pra deduplicar com CAPI server-side */
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var eid = params.get('eid') || ('lead_' + Date.now() + '_' + Math.random().toString(36).slice(2, 10));
+    fbq('track', 'Lead', {}, { eventID: eid });
+  })();
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=387506053330342&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTQ4TV7LH0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-BTQ4TV7LH0');
+
+      /* GA4: conversão de lead na thank-you page */
+      gtag('event', 'generate_lead', {
+        event_category: 'form',
+        event_label: 'cadastro_revendedor',
+        page_location: window.location.href
+      });
+    </script>
+      <!-- End Google tag (gtag.js) -->
+  <style>
+    :root {
+      --navy:  #0f1f4b;
+      --blue:  #2563eb;
+      --green: #059669;
+      --gray:  #475569;
+      --light: #f8fafc;
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { font-size:16px; }
+    body {
+      font-family:'Inter', system-ui, sans-serif;
+      background:var(--light);
+      color:var(--navy);
+      min-height:100dvh;
+      display:flex; flex-direction:column;
+      -webkit-font-smoothing:antialiased;
+    }
+    a { text-decoration:none; color:inherit; }
+
+    /* ── HEADER ── */
+    .header {
+      background:#fff;
+      border-bottom:1px solid #e2e8f0;
+      padding:16px 24px;
+      display:flex; justify-content:center;
+    }
+    .header img { height:72px; width:auto; }
+
+    /* ── MAIN ── */
+    .main {
+      flex:1; display:flex; align-items:center; justify-content:center;
+      padding:48px 24px;
+    }
+    .card {
+      background:#fff;
+      border-radius:24px;
+      padding:56px 48px;
+      max-width:600px; width:100%;
+      text-align:center;
+      box-shadow:0 12px 40px rgba(0,0,0,.08);
+    }
+
+    /* check icon */
+    .check-circle {
+      width:88px; height:88px; border-radius:50%;
+      background:linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+      display:flex; align-items:center; justify-content:center;
+      margin:0 auto 28px;
+      animation:pop .5s cubic-bezier(0.34,1.56,0.64,1) both;
+    }
+    @keyframes pop { from { transform:scale(0); opacity:0; } to { transform:scale(1); opacity:1; } }
+    .check-circle svg { width:44px; height:44px; stroke:var(--green); fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+
+    .tag {
+      display:inline-block;
+      background:#ecfdf5; color:#065f46;
+      font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+      padding:4px 14px; border-radius:50px; margin-bottom:20px;
+    }
+    h1 { font-size:clamp(1.75rem,4vw,2.25rem); font-weight:900; line-height:1.2; margin-bottom:14px; }
+    .sub { font-size:1.05rem; color:var(--gray); line-height:1.7; margin-bottom:36px; }
+
+    /* steps */
+    .steps { text-align:left; margin-bottom:36px; }
+    .step {
+      display:flex; align-items:flex-start; gap:14px;
+      padding:14px 0; border-bottom:1px solid #f1f5f9;
+    }
+    .step:last-child { border-bottom:none; }
+    .step__num {
+      width:32px; height:32px; border-radius:50%; flex-shrink:0;
+      background:linear-gradient(135deg, var(--blue) 0%, #3b82f6 100%);
+      color:#fff; font-size:.875rem; font-weight:800;
+      display:flex; align-items:center; justify-content:center;
+      margin-top:1px;
+    }
+    .step__title { font-weight:700; font-size:.9375rem; margin-bottom:2px; }
+    .step__desc  { font-size:.875rem; color:var(--gray); line-height:1.5; }
+
+    /* buttons */
+    .btns { display:flex; flex-direction:column; gap:12px; }
+    .btn {
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      padding:15px 28px; border-radius:12px; font-family:inherit;
+      font-size:1rem; font-weight:700; border:none; cursor:pointer;
+      transition:transform .18s, box-shadow .18s;
+      min-height:52px;
+    }
+    .btn:hover { transform:translateY(-2px); }
+    .btn--green { background:var(--green); color:#fff; box-shadow:0 6px 20px rgba(5,150,105,.3); }
+    .btn--green:hover { box-shadow:0 10px 28px rgba(5,150,105,.4); }
+    .btn--outline { background:#fff; color:var(--navy); border:2px solid #e2e8f0; }
+    .btn--outline:hover { border-color:var(--blue); color:var(--blue); }
+    .btn svg { width:20px; height:20px; fill:currentColor; }
+
+    /* footer */
+    .footer {
+      text-align:center; padding:20px 24px;
+      font-size:.8rem; color:#94a3b8;
+    }
+
+    @media (max-width:480px) {
+      .card { padding:36px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html">
+      <img src="logo.png" alt="Oxi Química Varginha">
+    </a>
+  </header>
+
+  <main class="main">
+    <div class="card">
+
+      <div class="check-circle" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+
+      <span class="tag">Cadastro confirmado</span>
+
+      <h1>Obrigado pelo seu interesse em ser revendedor!</h1>
+
+      <p class="sub">
+        Seu cadastro foi recebido com sucesso.<br>
+        Um consultor da <strong>Oxiquímica Varginha</strong> vai entrar em contato pelo seu WhatsApp em <strong>horário comercial</strong>.
+      </p>
+
+      <!-- Próximos passos -->
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <div>
+            <div class="step__title">Aguarde o contato do consultor</div>
+            <div class="step__desc">Pelo WhatsApp que você informou, em horário comercial.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <div>
+            <div class="step__title">Escolha os produtos</div>
+            <div class="step__desc">Nosso consultor apresenta o catálogo e ajuda você a montar o pedido ideal.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <div>
+            <div class="step__title">Receba os produtos</div>
+            <div class="step__desc">Entrega rápida nas rotas disponíveis. Investimento a partir de R$1000.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num" style="background:linear-gradient(135deg,#059669,#10b981);">4</div>
+          <div>
+            <div class="step__title">Comece a vender e lucrar</div>
+            <div class="step__desc">Margem de 60–100%. Muitos revendedores vendem já na primeira semana.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btns">
+        <a href="https://wa.me/5535997148855?text=Ol%C3%A1%21+Acabei+de+me+cadastrar+como+revendedor+Oxiqu%C3%ADmica+e+aguardo+o+contato." class="btn btn--green" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar no WhatsApp agora
+        </a>
+        <a href="index.html" class="btn btn--outline">
+          Voltar à página inicial
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2026 Oxiquímica Varginha · Desenvolvido por <a href="https://drosagencia.com.br" style="color:#2563eb;">Dros Agência</a>
+  </footer>
+
+</body>
+</html>

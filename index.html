@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seja um Revendedor Oxiquímica Varginha</title>
+  <meta name="description" content="Torne-se revendedor Oxiquímica Varginha. Produtos de limpeza profissional com margem de até 100%, suporte completo e entrega na sua região.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Meta Pixel Code - OXIQUIMICA SITE -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/pt_BR/fbevents.js');
+
+  fbq('init', '387506053330342');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=387506053330342&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTQ4TV7LH0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-BTQ4TV7LH0');
+    </script>
+      <!-- End Google tag (gtag.js) -->
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --navy:       #0f1f4b;
+      --navy-light: #162954;
+      --blue:       #2563eb;
+      --blue-light: #3b82f6;
+      --blue-pale:  #eff6ff;
+      --green:      #059669;
+      --green-pale: #ecfdf5;
+      --gray-50:    #f8fafc;
+      --gray-100:   #f1f5f9;
+      --gray-200:   #e2e8f0;
+      --gray-400:   #94a3b8;
+      --gray-600:   #475569;
+      --gray-800:   #1e293b;
+      --white:      #ffffff;
+      --gold:       #b8972a;
+
+      --radius-sm:  8px;
+      --radius-md:  12px;
+      --radius-lg:  16px;
+      --radius-xl:  24px;
+
+      --shadow-sm:  0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.05);
+      --shadow-md:  0 4px 16px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.05);
+      --shadow-lg:  0 12px 40px rgba(0,0,0,.10), 0 4px 12px rgba(0,0,0,.06);
+      --shadow-blue:0 8px 28px rgba(37,99,235,.28);
+
+      --ease-out:   cubic-bezier(0.0, 0.0, 0.2, 1);
+      --ease-in:    cubic-bezier(0.4, 0.0, 1, 1);
+    }
+
+    /* ── RESET ── */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; font-size:16px; }
+    body {
+      font-family:'Inter', system-ui, sans-serif;
+      color: var(--gray-800);
+      background: var(--white);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    img { max-width:100%; display:block; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    button, input, select { font-family:inherit; }
+
+    /* ── LAYOUT ── */
+    .wrap  { max-width:1120px; margin:0 auto; padding:0 24px; }
+    .wrap--narrow { max-width:720px; margin:0 auto; padding:0 24px; }
+    .section      { padding:88px 0; }
+    .section--alt  { background:var(--gray-50); }
+    .section--dark { background:var(--navy); color:var(--white); }
+    .section--grad { background:linear-gradient(135deg, var(--navy) 0%, #1e3a8a 100%); color:var(--white); }
+
+    /* ── TYPE ── */
+    .label {
+      display:inline-block;
+      font-size:.75rem; font-weight:700;
+      letter-spacing:.08em; text-transform:uppercase;
+      color:var(--blue); background:var(--blue-pale);
+      padding:4px 14px; border-radius:50px;
+      margin-bottom:16px;
+    }
+    .label--light { color:#93c5fd; background:rgba(255,255,255,.1); }
+    .h1 { font-size:clamp(2.25rem,5vw,3.5rem); font-weight:900; line-height:1.1; letter-spacing:-.03em; }
+    .h2 { font-size:clamp(1.625rem,3.5vw,2.25rem); font-weight:800; line-height:1.2; letter-spacing:-.02em; }
+    .h3 { font-size:1.125rem; font-weight:700; line-height:1.3; }
+    .lead { font-size:1.125rem; color:var(--gray-600); line-height:1.7; }
+    .lead--light { color:rgba(255,255,255,.72); }
+    .highlight { color:var(--blue); }
+    .highlight--green { color:var(--green); }
+    .text-center { text-align:center; }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      font-size:1rem; font-weight:700;
+      padding:14px 28px; border-radius:var(--radius-md);
+      border:2px solid transparent;
+      cursor:pointer; transition:transform .18s var(--ease-out), box-shadow .18s var(--ease-out), background .18s;
+      min-height:48px; /* touch target */
+      white-space:nowrap;
+    }
+    .btn:active { transform:scale(.97); }
+    .btn--primary {
+      background:var(--blue); color:var(--white);
+      box-shadow:var(--shadow-blue);
+    }
+    .btn--primary:hover { background:var(--blue-light); transform:translateY(-2px); box-shadow:0 12px 36px rgba(37,99,235,.38); }
+    .btn--ghost {
+      background:transparent; color:var(--white);
+      border-color:rgba(255,255,255,.45);
+    }
+    .btn--ghost:hover { background:rgba(255,255,255,.1); transform:translateY(-2px); }
+    .btn--white { background:var(--white); color:var(--navy); }
+    .btn--white:hover { transform:translateY(-2px); box-shadow:var(--shadow-lg); }
+    .btn--green { background:var(--green); color:var(--white); box-shadow:0 6px 20px rgba(5,150,105,.3); }
+    .btn--green:hover { background:#047857; transform:translateY(-2px); }
+    .btn--lg { padding:16px 36px; font-size:1.0625rem; min-height:54px; }
+    .btn--full { width:100%; }
+
+    /* ── HEADER ── */
+    .header {
+      position:fixed; top:0; left:0; right:0; z-index:900;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--gray-200);
+      transition:box-shadow .2s;
+    }
+    .header.scrolled { box-shadow:var(--shadow-md); }
+    /* Desktop: logo esquerda, botão direita */
+    .header__inner {
+      display:flex; flex-direction:row; align-items:center; justify-content:space-between;
+      height:90px; padding:0 24px;
+    }
+    .header__logo img { height:72px; width:auto; }
+    .header__cta .btn { padding:12px 28px; font-size:.9375rem; min-height:44px; }
+    /* Mobile: coluna centralizada */
+    @media (max-width:640px) {
+      .header__inner {
+        flex-direction:column; justify-content:center; align-items:center;
+        height:auto; padding:14px 24px; gap:12px;
+      }
+      .header__logo img { height:100px; }
+      .header__cta .btn { width:100%; max-width:320px; }
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding:140px 0 96px;
+      background:radial-gradient(ellipse 80% 60% at 50% 0%, #dbeafe 0%, var(--white) 65%);
+    }
+    .hero__grid {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:64px; align-items:center;
+    }
+    .hero__left { text-align:left; }
+    .hero__right {
+      display:flex; align-items:center; justify-content:center;
+    }
+    .hero__right img {
+      width:100%; max-width:520px; height:auto;
+      border-radius:20px;
+      box-shadow:0 20px 60px rgba(0,0,0,.12);
+      transition:transform .3s;
+    }
+    .hero__right img:hover { transform:scale(1.02); }
+    .hero__tag {
+      display:inline-flex; align-items:center; gap:8px;
+      background:var(--green-pale); color:#065f46;
+      font-size:.825rem; font-weight:600;
+      padding:7px 16px; border-radius:50px;
+      margin-bottom:28px;
+    }
+    .hero__dot {
+      width:8px; height:8px; border-radius:50%; background:var(--green);
+      animation:pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+    .hero__title { max-width:600px; margin:0 0 20px; }
+    .hero__sub { max-width:520px; margin:0 0 36px; }
+    .hero__ctas { display:flex; gap:14px; flex-wrap:wrap; }
+    .hero__pills {
+      display:flex; gap:32px; flex-wrap:wrap;
+      margin-top:48px; padding-top:32px;
+      border-top:1px solid var(--gray-200);
+    }
+    .hero__pill { text-align:center; }
+    .hero__pill-val { font-size:2rem; font-weight:900; color:var(--blue); line-height:1; }
+    .hero__pill-lbl { font-size:.825rem; color:var(--gray-400); margin-top:4px; font-weight:500; }
+
+    /* ── TRUST BAR ── */
+    .trust { border-bottom:1px solid var(--gray-200); padding:24px 0; }
+    .trust__inner {
+      display:flex; align-items:center; justify-content:center;
+      gap:40px; flex-wrap:wrap;
+    }
+    .trust__item {
+      display:flex; align-items:center; gap:10px;
+      font-size:.9rem; color:var(--gray-600); font-weight:500;
+    }
+    .trust__icon {
+      width:40px; height:40px; border-radius:10px;
+      background:var(--blue-pale);
+      display:flex; align-items:center; justify-content:center;
+      flex-shrink:0;
+    }
+    .trust__icon svg { width:20px; height:20px; stroke:var(--blue); fill:none; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round; }
+
+    /* ── BENEFIT CARDS ── */
+    .benefits-grid {
+      display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
+    }
+    .benefit-card {
+      background:var(--white); border:1px solid var(--gray-200);
+      border-radius:var(--radius-lg); padding:28px;
+      transition:transform .2s var(--ease-out), box-shadow .2s var(--ease-out), border-color .2s;
+    }
+    .benefit-card:hover {
+      transform:translateY(-4px);
+      box-shadow:var(--shadow-lg);
+      border-color:transparent;
+    }
+    .benefit-icon {
+      width:52px; height:52px; border-radius:14px;
+      display:flex; align-items:center; justify-content:center;
+      margin-bottom:18px; flex-shrink:0;
+    }
+    .benefit-icon svg { width:26px; height:26px; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round; }
+    .benefit-icon--blue   { background:#dbeafe; }
+    .benefit-icon--blue   svg { stroke:var(--blue); fill:none; }
+    .benefit-icon--green  { background:#d1fae5; }
+    .benefit-icon--green  svg { stroke:var(--green); fill:none; }
+    .benefit-icon--purple { background:#ede9fe; }
+    .benefit-icon--purple svg { stroke:#7c3aed; fill:none; }
+    .benefit-icon--orange { background:#ffedd5; }
+    .benefit-icon--orange svg { stroke:#ea580c; fill:none; }
+    .benefit-icon--teal   { background:#ccfbf1; }
+    .benefit-icon--teal   svg { stroke:#0d9488; fill:none; }
+    .benefit-icon--indigo { background:#e0e7ff; }
+    .benefit-icon--indigo svg { stroke:#4338ca; fill:none; }
+    .benefit-card .h3 { margin-bottom:8px; }
+    .benefit-card p { font-size:.9375rem; color:var(--gray-600); line-height:1.6; }
+
+    /* ── PRODUCTS ── */
+    .products-grid {
+      display:grid; grid-template-columns:repeat(8,1fr); gap:16px;
+    }
+    .product-card {
+      background:var(--white); border:1px solid var(--gray-200);
+      border-radius:var(--radius-md); padding:16px 10px 14px;
+      text-align:center;
+      transition:transform .2s var(--ease-out), box-shadow .2s var(--ease-out);
+      cursor:default;
+    }
+    .product-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
+    .product-card img {
+      width:72px; height:110px; object-fit:contain;
+      margin:0 auto 10px; display:block;
+    }
+    .product-card__name { font-size:.75rem; font-weight:700; color:var(--navy); line-height:1.3; }
+    .product-card__seg  { font-size:.68rem; color:var(--gray-400); margin-top:3px; }
+    @media (max-width:1024px) { .products-grid { grid-template-columns:repeat(4,1fr); } }
+    @media (max-width:640px)  { .products-grid { grid-template-columns:repeat(2,1fr); gap:14px; }
+      .product-card { padding:20px 12px 16px; }
+      .product-card img { width:100px; height:152px; }
+      .product-card__name { font-size:.85rem; }
+      .product-card__seg  { font-size:.78rem; }
+      .produtos-banner { grid-template-columns:1fr !important; gap:24px !important; padding:28px !important; }
+      .produtos-banner img { max-width:260px !important; }
+      .banner-img { margin:-70px 0 !important; }
+    }
+
+    /* ── SEGMENTS ── */
+    .segments-grid {
+      display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+    }
+    .seg-card {
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:var(--radius-lg); padding:26px 20px;
+      text-align:center;
+      transition:background .2s, transform .2s var(--ease-out);
+    }
+    .seg-card:hover { background:rgba(255,255,255,.13); transform:translateY(-3px); }
+    .seg-card__icon { display:none; }
+    .seg-card__name { font-weight:700; font-size:.9375rem; color:var(--white); margin-bottom:4px; }
+    .seg-card__desc { font-size:.8rem; color:rgba(255,255,255,.55); }
+
+    /* ── TIMELINE ── */
+    .timeline {
+      display:grid; grid-template-columns:repeat(4,1fr);
+      gap:8px; position:relative; margin-top:16px;
+    }
+    .timeline::before {
+      content:'';
+      position:absolute; top:32px; left:12.5%; right:12.5%;
+      height:2px;
+      background:linear-gradient(90deg, var(--blue), var(--green));
+      border-radius:2px;
+    }
+    .tl-step { text-align:center; padding:0 12px; }
+    .tl-num {
+      width:64px; height:64px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.375rem; font-weight:800; color:var(--white);
+      margin:0 auto 20px; position:relative; z-index:2;
+      box-shadow:var(--shadow-blue);
+    }
+    .tl-num--blue  { background:linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%); }
+    .tl-num--green { background:linear-gradient(135deg, var(--green) 0%, #10b981 100%); box-shadow:0 6px 20px rgba(5,150,105,.3); }
+    .tl-step .h3 { margin-bottom:6px; }
+    .tl-step p { font-size:.875rem; color:var(--gray-600); line-height:1.55; }
+
+    /* ── NUMBERS ── */
+    .numbers-grid {
+      display:grid; grid-template-columns:repeat(4,1fr); gap:32px;
+      text-align:center;
+    }
+    .num-val {
+      font-size:clamp(2.5rem,4.5vw,3.25rem); font-weight:900;
+      line-height:1; color:var(--white); margin-bottom:8px;
+    }
+    .num-lbl { font-size:.9375rem; color:rgba(255,255,255,.65); font-weight:500; }
+
+    /* ── TESTIMONIALS ── */
+    .testi-grid {
+      display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
+    }
+    .testi-card {
+      background:var(--white); border:1px solid var(--gray-200);
+      border-radius:var(--radius-lg); padding:28px;
+      transition:box-shadow .2s;
+    }
+    .testi-card:hover { box-shadow:var(--shadow-md); }
+    .testi-stars { color:#f59e0b; letter-spacing:2px; font-size:.9rem; margin-bottom:14px; }
+    .testi-text {
+      font-size:.9375rem; color:var(--gray-600);
+      line-height:1.7; font-style:italic; margin-bottom:20px;
+    }
+    .testi-author { display:flex; align-items:center; gap:12px; }
+    .testi-avatar {
+      width:42px; height:42px; border-radius:50%;
+      background:linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
+      display:flex; align-items:center; justify-content:center;
+      font-size:.9rem; font-weight:700; color:var(--white);
+      flex-shrink:0;
+    }
+    .testi-name { font-weight:700; font-size:.9375rem; }
+    .testi-role { font-size:.8rem; color:var(--gray-400); margin-top:2px; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width:720px; margin:0 auto; }
+    .faq-item {
+      border:1px solid var(--gray-200); border-radius:var(--radius-md);
+      margin-bottom:10px; overflow:hidden;
+      transition:border-color .2s;
+    }
+    .faq-item:hover { border-color:#bfdbfe; }
+    .faq-item.open  { border-color:var(--blue); background:var(--blue-pale); }
+    .faq-q {
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding:18px 22px; cursor:pointer;
+      font-weight:600; font-size:.9375rem;
+      user-select:none; -webkit-user-select:none;
+      min-height:56px; /* touch target */
+    }
+    .faq-q svg {
+      width:20px; height:20px; flex-shrink:0; stroke:var(--blue);
+      fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;
+      transition:transform .25s var(--ease-out);
+    }
+    .faq-item.open .faq-q svg { transform:rotate(45deg); }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height .32s var(--ease-out); }
+    .faq-item.open .faq-a { max-height:240px; }
+    .faq-a p { padding:0 22px 18px; font-size:.9375rem; color:var(--gray-600); line-height:1.7; }
+
+    /* ── FORM SECTION ── */
+    .form-wrap {
+      display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start;
+    }
+    .form-checklist { margin:28px 0; }
+    .form-check-item {
+      display:flex; align-items:flex-start; gap:14px; margin-bottom:18px;
+    }
+    .form-check-icon {
+      width:26px; height:26px; border-radius:50%;
+      background:var(--green); flex-shrink:0; margin-top:1px;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .form-check-icon svg { width:14px; height:14px; stroke:white; fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+    .form-check-text { font-size:.9375rem; color:var(--gray-600); line-height:1.5; }
+    .form-check-text strong { color:var(--gray-800); font-weight:600; }
+
+    .form-card {
+      background:var(--white); border-radius:var(--radius-xl);
+      padding:36px; box-shadow:var(--shadow-lg);
+      position:relative;
+    }
+    .form-badge {
+      position:absolute; top:-14px; left:50%; transform:translateX(-50%);
+      background:var(--green); color:var(--white);
+      font-size:.775rem; font-weight:700; padding:6px 18px; border-radius:50px;
+      white-space:nowrap; box-shadow:0 4px 14px rgba(5,150,105,.3);
+    }
+    .form-card__title { font-size:1.375rem; font-weight:800; text-align:center; margin:12px 0 4px; }
+    .form-card__sub { text-align:center; font-size:.875rem; color:var(--gray-400); margin-bottom:24px; }
+
+    .fgroup { margin-bottom:14px; }
+    .fgroup label {
+      display:block; font-size:.8125rem; font-weight:600;
+      color:var(--gray-600); margin-bottom:5px;
+    }
+    .fgroup input, .fgroup select {
+      width:100%; padding:12px 14px;
+      border:2px solid var(--gray-200); border-radius:var(--radius-sm);
+      font-size:.9375rem; color:var(--gray-800);
+      background:var(--gray-50); outline:none;
+      transition:border-color .18s, background .18s;
+      min-height:48px; /* touch target */
+      appearance:none; -webkit-appearance:none;
+    }
+    .fgroup input:focus, .fgroup select:focus {
+      border-color:var(--blue); background:var(--white);
+    }
+    .fgroup input.error, .fgroup select.error { border-color:#dc2626; }
+    .fgroup .err-msg {
+      display:none; font-size:.775rem; color:#dc2626;
+      margin-top:4px; font-weight:500;
+    }
+    .fgroup.has-error .err-msg { display:block; }
+    .fgroup input::placeholder { color:var(--gray-400); }
+    .frow { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .form-privacy {
+      text-align:center; font-size:.775rem; color:var(--gray-400);
+      margin-top:10px; display:flex; align-items:center; justify-content:center; gap:6px;
+    }
+    .form-privacy svg { width:13px; height:13px; stroke:var(--gray-400); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+    .form-success {
+      display:none; text-align:center; padding:36px 0;
+    }
+    .form-success__icon {
+      width:64px; height:64px; border-radius:50%;
+      background:var(--green-pale); margin:0 auto 16px;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .form-success__icon svg { width:32px; height:32px; stroke:var(--green); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+    .form-success h3 { font-size:1.25rem; font-weight:800; color:var(--green); margin-bottom:8px; }
+    .form-success p { font-size:.9375rem; color:var(--gray-600); }
+
+    /* ── FINAL CTA ── */
+    .final-cta { text-align:center; }
+    .final-cta .h2 { color:var(--white); margin-bottom:12px; }
+    .final-cta .lead--light { margin-bottom:36px; }
+    .final-cta__btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+    /* ── FOOTER ── */
+    .footer { background:#080f22; color:rgba(255,255,255,.55); padding:52px 0 24px; }
+    .footer__grid {
+      display:grid; grid-template-columns:2fr 1fr 1fr; gap:48px; margin-bottom:36px;
+    }
+    .footer__logo img { height:48px; width:auto; margin-bottom:14px; }
+    .footer__desc { font-size:.875rem; line-height:1.65; max-width:320px; }
+    .footer__col-title {
+      font-size:.75rem; font-weight:700; color:var(--white);
+      text-transform:uppercase; letter-spacing:.08em; margin-bottom:16px;
+    }
+    .footer__link {
+      display:block; font-size:.875rem; margin-bottom:10px;
+      transition:color .18s;
+    }
+    .footer__link:hover { color:var(--blue-light); }
+    .footer__bottom {
+      border-top:1px solid rgba(255,255,255,.08);
+      padding-top:20px;
+      display:flex; justify-content:space-between; align-items:center;
+      font-size:.8rem; flex-wrap:wrap; gap:10px;
+    }
+
+
+    /* ── QUIZ ── */
+    .quiz-progress {
+      height:6px; background:var(--gray-100); border-radius:3px;
+      overflow:hidden; margin:6px 0 24px;
+    }
+    .quiz-progress__bar {
+      height:100%; background:linear-gradient(90deg, var(--blue), var(--green));
+      border-radius:3px; transition:width .35s var(--ease-out);
+    }
+    .quiz-step__num {
+      font-size:.75rem; font-weight:700; color:var(--blue);
+      letter-spacing:.08em; text-transform:uppercase; margin-bottom:10px;
+    }
+    .quiz-step__title {
+      font-size:1.25rem; font-weight:800; color:var(--gray-800);
+      line-height:1.3; margin-bottom:6px;
+    }
+    .quiz-step__sub {
+      font-size:.9375rem; color:var(--gray-600); line-height:1.55;
+      margin-bottom:18px;
+    }
+    .quiz-info {
+      background:var(--blue-pale); border:1px solid #dbeafe;
+      border-radius:var(--radius-md); padding:14px 16px; margin-bottom:18px;
+      font-size:.9rem; color:var(--gray-800); line-height:1.55;
+    }
+    .quiz-info strong { color:var(--blue); }
+    .quiz-options { display:grid; gap:10px; margin-bottom:6px; }
+    .quiz-opt {
+      background:var(--white); border:2px solid var(--gray-200);
+      border-radius:var(--radius-md); padding:14px 18px;
+      font-size:.9375rem; font-weight:600; color:var(--gray-800);
+      text-align:left; cursor:pointer; font-family:inherit;
+      transition:border-color .18s, background .18s, transform .12s;
+      min-height:54px; display:flex; align-items:center; gap:12px;
+    }
+    .quiz-opt:hover { border-color:var(--blue); background:var(--blue-pale); }
+    .quiz-opt:active { transform:scale(.98); }
+    .quiz-opt::before {
+      content:''; width:18px; height:18px; border-radius:50%;
+      border:2px solid var(--gray-200); flex-shrink:0;
+      transition:border-color .18s, background .18s;
+    }
+    .quiz-opt:hover::before { border-color:var(--blue); }
+    .quiz-back {
+      display:inline-flex; align-items:center; gap:6px;
+      background:none; border:none; color:var(--gray-400);
+      font-size:.825rem; font-weight:600; cursor:pointer;
+      padding:0 0 14px; font-family:inherit;
+    }
+    .quiz-back:hover { color:var(--blue); }
+    .quiz-back svg { width:14px; height:14px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+
+    /* ── SCROLL ANIM ── */
+    .reveal {
+      opacity:0; transform:translateY(28px);
+      transition:opacity .55s var(--ease-out), transform .55s var(--ease-out);
+    }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-d1 { transition-delay:.08s; }
+    .reveal-d2 { transition-delay:.16s; }
+    .reveal-d3 { transition-delay:.24s; }
+    .reveal-d4 { transition-delay:.32s; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { transition:none; opacity:1; transform:none; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width:1024px) {
+      .benefits-grid  { grid-template-columns:repeat(2,1fr); }
+      .segments-grid  { grid-template-columns:repeat(2,1fr); }
+      .timeline       { grid-template-columns:repeat(2,1fr); gap:28px; }
+      .timeline::before { display:none; }
+      .numbers-grid   { grid-template-columns:repeat(2,1fr); }
+      .testi-grid     { grid-template-columns:1fr; }
+      .form-wrap      { grid-template-columns:1fr; gap:40px; }
+      .footer__grid   { grid-template-columns:1fr; gap:32px; }
+    }
+    @media (max-width:640px) {
+      .section { padding:64px 0; }
+      .hero    { padding:220px 0 64px; }
+      .hero__ctas { flex-direction:column; align-items:center; }
+      .hero__ctas .btn { width:100%; max-width:340px; }
+      .hero__pills { gap:20px; }
+      .trust__inner { gap:20px; }
+      .benefits-grid { grid-template-columns:1fr; }
+      .segments-grid { grid-template-columns:repeat(2,1fr); gap:12px; }
+      .timeline { grid-template-columns:1fr; }
+      .numbers-grid { grid-template-columns:repeat(2,1fr); gap:20px; }
+      .frow { grid-template-columns:1fr; }
+      .form-card { padding:24px 18px; }
+      .final-cta__btns { flex-direction:column; align-items:center; }
+      .final-cta__btns .btn { width:100%; max-width:340px; }
+      .footer__bottom { flex-direction:column; text-align:center; }
+      .hero    { padding:140px 0 64px; }
+      .hero__grid { grid-template-columns:1fr; gap:36px; }
+      .hero__left { text-align:center; }
+      .hero__right { display:none; }
+      .hero__title { margin:0 auto 20px; }
+      .hero__sub { margin:0 auto 36px; }
+      .hero__ctas { justify-content:center; }
+      .hero__pills { justify-content:center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════ HEADER ═══════════════════ -->
+<header class="header" id="js-header">
+  <div class="wrap header__inner">
+    <a href="#" class="header__logo" aria-label="Oxiquímica Varginha, página inicial">
+      <img src="logo.png" alt="Oxi Química Varginha">
+    </a>
+    <div class="header__cta">
+      <a href="#cadastro" class="btn btn--primary">Quero ser revendedor</a>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__grid">
+
+      <!-- Esquerda: texto -->
+      <div class="hero__left">
+        <div class="hero__tag">
+          <span class="hero__dot" aria-hidden="true"></span>
+          Seja um revendedor na sua região
+        </div>
+
+        <h1 class="h1 hero__title reveal">
+          Seja um revendedor Oxi Química e
+          <span class="highlight"> aumente seu faturamento</span>
+        </h1>
+
+        <p class="lead hero__sub reveal reveal-d1">
+          Você compra os produtos direto da fábrica, registrados na ANVISA, com margem de lucro de até 100%, suporte completo e entrega na sua região.
+        </p>
+
+        <div class="hero__ctas reveal reveal-d2">
+          <a href="#cadastro" class="btn btn--primary btn--lg">Quero me cadastrar</a>
+          <a href="#como-funciona" class="btn btn--ghost btn--lg" style="color:var(--navy);border-color:var(--gray-200);">Como funciona</a>
+        </div>
+
+        <div class="hero__pills reveal reveal-d3">
+          <div class="hero__pill">
+            <div class="hero__pill-val">9+</div>
+            <div class="hero__pill-lbl">Segmentos atendidos</div>
+          </div>
+          <div class="hero__pill">
+            <div class="hero__pill-val">60–100%</div>
+            <div class="hero__pill-lbl">Margem de lucro</div>
+          </div>
+          <div class="hero__pill">
+            <div class="hero__pill-val">33+</div>
+            <div class="hero__pill-lbl">Anos de mercado</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Direita: imagem -->
+      <div class="hero__right reveal reveal-d2">
+        <img src="revendedor-oxi-quimica.png" alt="Revendedor Oxiquímica">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TRUST BAR ═══════════════════ -->
+<section class="trust">
+  <div class="wrap">
+    <div class="trust__inner">
+      <div class="trust__item">
+        <div class="trust__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        Registrado na ANVISA
+      </div>
+      <div class="trust__item">
+        <div class="trust__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 4v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        Direto da fábrica
+      </div>
+      <div class="trust__item">
+        <div class="trust__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        Frete grátis em rotas<span style="font-size:.7rem;vertical-align:super;margin-left:2px;color:var(--gray-400);">*</span>
+      </div>
+      <div class="trust__item">
+        <div class="trust__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        Pessoa física ou jurídica
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ BENEFITS ═══════════════════ -->
+<section class="section section--alt" id="vantagens">
+  <div class="wrap text-center">
+    <span class="label reveal">Vantagens</span>
+    <h2 class="h2 reveal reveal-d1">Por que revender <span class="highlight">Oxiquímica</span>?</h2>
+    <p class="lead reveal reveal-d2" style="max-width:560px;margin:12px auto 52px;">Uma estrutura completa para você começar a vender e lucrar já na primeira semana.</p>
+  </div>
+  <div class="wrap">
+    <div class="benefits-grid">
+
+      <div class="benefit-card reveal">
+        <div class="benefit-icon benefit-icon--blue" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3 class="h3">Margem de 60% a 100%</h3>
+        <p>Preço direto de fábrica. Você define o valor de revenda e controla seu lucro em cada produto.</p>
+      </div>
+
+      <div class="benefit-card reveal reveal-d1">
+        <div class="benefit-icon benefit-icon--green" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 4v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3 class="h3">Frete grátis em rotas<span style="font-size:.7rem;vertical-align:super;margin-left:2px;font-weight:400;">*</span></h3>
+        <p>Entrega sem custo adicional nas rotas disponíveis em Minas Gerais e região. <span style="font-size:.8rem;color:var(--gray-400);">*Consulte sua região.</span></p>
+      </div>
+
+      <div class="benefit-card reveal reveal-d2">
+        <div class="benefit-icon benefit-icon--purple" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3 class="h3">+33 anos de mercado</h3>
+        <p>Empresa consolidada em Minas Gerais. Produtos com histórico comprovado e clientes fiéis em toda a região.</p>
+      </div>
+
+      <div class="benefit-card reveal">
+        <div class="benefit-icon benefit-icon--orange" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 class="h3">Conteúdo digital semanal</h3>
+        <p>Artes prontas para WhatsApp e Instagram. Você divulga sem precisar criar nada do zero.</p>
+      </div>
+
+      <div class="benefit-card reveal reveal-d1">
+        <div class="benefit-icon benefit-icon--teal" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3 class="h3">9 segmentos de mercado</h3>
+        <p>Agro, automotivo, hospitalar, alimentício e mais. Atenda qualquer tipo de cliente na sua região.</p>
+      </div>
+
+      <div class="benefit-card reveal reveal-d2">
+        <div class="benefit-icon benefit-icon--indigo" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3 class="h3">Início rápido e simples</h3>
+        <p>Investimento a partir de R$1000. Receba seus produtos e comece a vender na mesma semana.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PRODUTOS ═══════════════════ -->
+<section class="section">
+
+  <!-- Banner destaque -->
+  <div class="wrap" style="margin-bottom:64px;">
+    <div class="reveal produtos-banner" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;background:linear-gradient(135deg,var(--blue-pale) 0%,#e0f2fe 100%);border-radius:24px;padding:48px;overflow:hidden;">
+      <div style="display:flex;justify-content:center;">
+        <img src="produtos-oxi-quimica.png" alt="Linha de produtos Oxiquímica" class="banner-img" style="max-width:420px;width:100%;height:auto;margin:-100px 0;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.10));transition:transform .3s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      </div>
+      <div>
+        <span class="label">Linha completa</span>
+        <h2 class="h2" style="margin-bottom:16px;">Mais de <span class="highlight">150 produtos</span> pra você revender</h2>
+        <p class="lead" style="margin-bottom:28px;">Amaciante, desinfetante, neutralav, iodo protect, sabão e muito mais. Todos registrados na ANVISA, com embalagens profissionais que vendem sozinhas.</p>
+        <a href="#cadastro" class="btn btn--primary btn--lg">Quero ser revendedor</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid de produtos individuais -->
+  <div class="wrap text-center" style="margin-bottom:36px;">
+    <h3 class="h3" style="color:var(--gray-600);font-weight:600;">Produtos mais vendidos</h3>
+  </div>
+  <div class="wrap">
+    <div class="products-grid">
+
+      <div class="product-card reveal">
+        <img src="https://static.wixstatic.com/media/a76a92_6321536b7eb14ee980eee82e5cf0afe7~mv2.png/v1/fill/w_280,h_425,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/alcalino.png" alt="Oxi Alcalino" loading="lazy">
+        <div class="product-card__name">Oxi Alcalino</div>
+        <div class="product-card__seg">Agro</div>
+      </div>
+
+      <div class="product-card reveal reveal-d1">
+        <img src="https://static.wixstatic.com/media/a76a92_a06e5bbd5aef437ea476aa3b519a5693~mv2.png/v1/fill/w_280,h_425,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/acid.png" alt="Oxi Acid" loading="lazy">
+        <div class="product-card__name">Oxi Acid</div>
+        <div class="product-card__seg">Agro</div>
+      </div>
+
+      <div class="product-card reveal reveal-d2">
+        <img src="https://static.wixstatic.com/media/a76a92_4c3da749a8ae4c3ea880830390cdcfc7~mv2.png/v1/crop/x_0,y_19,w_689,h_1045/fill/w_280,h_425,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/OXI%20car%201%20e%205.png" alt="Oxi Car" loading="lazy">
+        <div class="product-card__name">Oxi Car</div>
+        <div class="product-card__seg">Automotivo</div>
+      </div>
+
+      <div class="product-card reveal reveal-d3">
+        <img src="https://static.wixstatic.com/media/a76a92_4d9f0f1e50ad4bf3982c1b46e74fad9f~mv2.png/v1/fill/w_280,h_425,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/OXI%20limpneu%201%20e%205.png" alt="Oxi Limpneu" loading="lazy">
+        <div class="product-card__name">Oxi Limpneu</div>
+        <div class="product-card__seg">Automotivo</div>
+      </div>
+
+      <div class="product-card reveal">
+        <img src="https://static.wixstatic.com/media/a76a92_80d6a5cc1d1842e69e5f62182e25d0d9~mv2.png/v1/fill/w_280,h_425,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/clor.png" alt="Oxi Clor" loading="lazy">
+        <div class="product-card__name">Oxi Clor</div>
+        <div class="product-card__seg">Hospitalar</div>
+      </div>
+
+      <div class="product-card reveal reveal-d1">
+        <img src="https://static.wixstatic.com/media/a76a92_ee85acbe579c416fb4476b6d4a9eb1f6~mv2.png/v1/fill/w_280,h_425,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/clean.png" alt="Oxi Clean" loading="lazy">
+        <div class="product-card__name">Oxi Clean</div>
+        <div class="product-card__seg">Corporativo</div>
+      </div>
+
+      <div class="product-card reveal reveal-d2">
+        <img src="https://static.wixstatic.com/media/a76a92_21e1429a52c04c15a31bf5210320cb55~mv2.png/v1/fill/w_280,h_425,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/detergente%205l.png" alt="Oxi Detergente" loading="lazy">
+        <div class="product-card__name">Oxi Detergente</div>
+        <div class="product-card__seg">Ind. Alimentícia</div>
+      </div>
+
+      <div class="product-card reveal reveal-d3">
+        <img src="https://static.wixstatic.com/media/a76a92_f0d0c5e46b6c408d870df768dc2ed95c~mv2.png/v1/fill/w_280,h_425,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/pine.png" alt="Oxi Pine" loading="lazy">
+        <div class="product-card__name">Oxi Pine</div>
+        <div class="product-card__seg">Corporativo</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SEGMENTS ═══════════════════ -->
+<section class="section section--dark">
+  <div class="wrap text-center">
+    <span class="label label--light reveal">Portfólio completo</span>
+    <h2 class="h2 reveal reveal-d1" style="color:white;">Atenda <span style="color:#93c5fd;">todos os segmentos</span> com um único fornecedor</h2>
+    <p class="lead lead--light reveal reveal-d2" style="max-width:540px;margin:12px auto 52px;">Quanto mais segmentos você atende, maior o seu faturamento mensal.</p>
+  </div>
+  <div class="wrap">
+    <div class="segments-grid">
+
+      <div class="seg-card reveal">
+        <div class="seg-card__icon" aria-hidden="true">
+          <img src="icons/agriculture.png" alt="">
+        </div>
+        <div class="seg-card__name">Agro</div>
+        <div class="seg-card__desc">Fazendas e agroindústrias</div>
+      </div>
+
+      <div class="seg-card reveal reveal-d1">
+        <div class="seg-card__icon" aria-hidden="true">
+          <img src="icons/car.png" alt="">
+        </div>
+        <div class="seg-card__name">Automotivo</div>
+        <div class="seg-card__desc">Lava-rápidos e oficinas</div>
+      </div>
+
+      <div class="seg-card reveal reveal-d2">
+        <div class="seg-card__icon" aria-hidden="true">
+          <img src="icons/hospital.png" alt="">
+        </div>
+        <div class="seg-card__name">Hospitalar</div>
+        <div class="seg-card__desc">Clínicas e hospitais</div>
+      </div>
+
+      <div class="seg-card reveal reveal-d3">
+        <div class="seg-card__icon" aria-hidden="true">
+          <img src="icons/fast-food.png" alt="">
+        </div>
+        <div class="seg-card__name">Ind. Alimentícia</div>
+        <div class="seg-card__desc">Restaurantes e indústrias</div>
+      </div>
+
+      <div class="seg-card reveal">
+        <div class="seg-card__icon" aria-hidden="true">
+          <img src="icons/corporation.png" alt="">
+        </div>
+        <div class="seg-card__name">Corporativo</div>
+        <div class="seg-card__desc">Escritórios e condomínios</div>
+      </div>
+
+      <div class="seg-card reveal reveal-d1">
+        <div class="seg-card__icon" aria-hidden="true">
+          <img src="icons/workers.png" alt="">
+        </div>
+        <div class="seg-card__name">Casa e Construção</div>
+        <div class="seg-card__desc">Construtoras e obras</div>
+      </div>
+
+      <div class="seg-card reveal reveal-d2">
+        <div class="seg-card__icon" aria-hidden="true">
+          <img src="icons/raw-material.png" alt="">
+        </div>
+        <div class="seg-card__name">Matéria Prima</div>
+        <div class="seg-card__desc">Indústrias e formuladores</div>
+      </div>
+
+      <div class="seg-card reveal reveal-d3">
+        <div class="seg-card__icon" aria-hidden="true">
+          <img src="icons/house.png" alt="">
+        </div>
+        <div class="seg-card__name">Residencial</div>
+        <div class="seg-card__desc">Limpeza doméstica</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ HOW IT WORKS ═══════════════════ -->
+<section class="section" id="como-funciona">
+  <div class="wrap text-center">
+    <span class="label reveal">Passo a passo</span>
+    <h2 class="h2 reveal reveal-d1">Do cadastro à <span class="highlight">primeira venda</span> em 15 dias</h2>
+    <p class="lead reveal reveal-d2" style="max-width:500px;margin:12px auto 56px;">Um processo simples e direto. Cadastre-se hoje e comece a faturar em até 15 dias.</p>
+  </div>
+  <div class="wrap">
+    <div class="timeline">
+
+      <div class="tl-step reveal">
+        <div class="tl-num tl-num--blue">1</div>
+        <h3 class="h3">Cadastre-se</h3>
+        <p>Preencha o formulário. Um de nossos consultores entrará em contato.</p>
+      </div>
+
+      <div class="tl-step reveal reveal-d1">
+        <div class="tl-num tl-num--blue">2</div>
+        <h3 class="h3">Escolha os produtos</h3>
+        <p>Nosso consultor apresenta o catálogo e você escolhe os produtos ideais para sua região.</p>
+      </div>
+
+      <div class="tl-step reveal reveal-d2">
+        <div class="tl-num tl-num--green">3</div>
+        <h3 class="h3">Receba os produtos</h3>
+        <p>Entrega rápida nas rotas disponíveis. Investimento a partir de R$1000.</p>
+      </div>
+
+      <div class="tl-step reveal reveal-d3">
+        <div class="tl-num tl-num--green">4</div>
+        <h3 class="h3">Comece a vender</h3>
+        <p>Entrega rápida na sua região. Lucre já na primeira semana.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ NUMBERS ═══════════════════ -->
+<section class="section section--grad">
+  <div class="wrap">
+    <div class="numbers-grid">
+      <div class="reveal">
+        <div class="num-val">33+</div>
+        <div class="num-lbl">Anos de experiência</div>
+      </div>
+      <div class="reveal reveal-d1">
+        <div class="num-val">150+</div>
+        <div class="num-lbl">Produtos no catálogo</div>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="num-val">9</div>
+        <div class="num-lbl">Segmentos atendidos</div>
+      </div>
+      <div class="reveal reveal-d3">
+        <div class="num-val">MG+</div>
+        <div class="num-lbl">Cobertura regional</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
+<section class="section section--alt" id="depoimentos">
+  <div class="wrap text-center">
+    <span class="label reveal">Depoimentos</span>
+    <h2 class="h2 reveal reveal-d1">Quem revende, <span class="highlight">recomenda</span></h2>
+    <p class="lead reveal reveal-d2" style="max-width:500px;margin:12px auto 52px;">Histórias reais de revendedores que transformaram sua renda com Oxiquímica.</p>
+  </div>
+  <div class="wrap">
+    <div class="testi-grid">
+
+      <div class="testi-card reveal">
+        <div class="testi-stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="testi-text">"Comecei como renda extra e em 3 meses já estava faturando mais que meu salário. Os produtos vendem sozinhos porque a qualidade é excelente."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">MF</div>
+          <div>
+            <div class="testi-name">Marcos F.</div>
+            <div class="testi-role">Revendedor há 2 anos · Varginha/MG</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal reveal-d1">
+        <div class="testi-stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="testi-text">"Atendo restaurantes e lava-rápidos da região. A margem é ótima, a Oxiquímica sempre entrega no prazo e o suporte faz toda a diferença."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">CL</div>
+          <div>
+            <div class="testi-name">Carla L.</div>
+            <div class="testi-role">Revendedora PJ · Três Corações/MG</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal reveal-d2">
+        <div class="testi-stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="testi-text">"Sou aposentado e encontrei uma forma de manter minha renda ativa. Investimento baixo, retorno rápido e suporte sempre disponível."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">JR</div>
+          <div>
+            <div class="testi-name">José R.</div>
+            <div class="testi-role">Revendedor há 1 ano · Alfenas/MG</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FAQ ═══════════════════ -->
+<section class="section" id="faq">
+  <div class="wrap text-center">
+    <span class="label reveal">Dúvidas frequentes</span>
+    <h2 class="h2 reveal reveal-d1">Tudo que você precisa saber</h2>
+    <p class="lead reveal reveal-d2" style="max-width:500px;margin:12px auto 48px;">Respondemos as perguntas mais comuns de quem quer começar a revender.</p>
+  </div>
+  <div class="wrap">
+    <div class="faq-list reveal">
+
+      <div class="faq-item open">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="true">
+          <span>Qual é o investimento inicial para começar?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a" role="region">
+          <p>O investimento inicial gira em torno de R$1000 a R$1.500 no primeiro pedido, dependendo dos produtos escolhidos. Podemos conversar e ajustar esse valor à sua realidade, o importante é você começar.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Preciso ter CNPJ para revender?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a" role="region">
+          <p>Não. Vendemos para pessoa física e jurídica. Você pode começar como PF e formalizar quando sentir que é o momento certo.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Qual a margem de lucro real dos produtos?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a" role="region">
+          <p>A margem varia de 60% a 100% dependendo do produto e do preço que você pratica. Você tem total liberdade para definir seu preço de revenda. A maioria dos revendedores trabalha com margem média de 70–80%.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Vocês entregam na minha cidade?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a" role="region">
+          <p>Atendemos Varginha e toda a região do Sul de Minas. Para outras localidades, consulte-nos, estamos sempre expandindo nossas rotas. O frete é grátis nas rotas disponíveis.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Em quanto tempo começo a vender?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a" role="region">
+          <p>Cadastro hoje, um consultor entrará em contato, pedido processado e entregue em poucos dias. Muitos revendedores fazem a primeira venda na mesma semana que recebem os produtos.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Vocês oferecem treinamento?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a" role="region">
+          <p>Sim! Além do catálogo detalhado com fichas técnicas, você recebe orientação do consultor sobre os melhores produtos para cada segmento, dicas de venda e conteúdo digital semanal pronto para divulgar.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Posso usar a marca Oxiquímica nas minhas redes sociais?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a" role="region">
+          <p>Sim! Autorizamos o uso da marca em suas redes sociais e materiais de divulgação. Isso fortalece sua credibilidade junto aos clientes e associa seu trabalho a uma empresa consolidada.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Os produtos são regularizados?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a" role="region">
+          <p>Todos os nossos produtos possuem registro na ANVISA e atendem às normas vigentes de segurança e qualidade. Você revende com total tranquilidade.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Tem quantidade mínima de pedido?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a" role="region">
+          <p>Temos um valor mínimo sugerido para o primeiro pedido, mas somos flexíveis. Cadastre-se e nosso consultor monta o pedido ideal para o seu perfil.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FORM ═══════════════════ -->
+<section class="section section--alt" id="cadastro">
+  <div class="wrap">
+    <div class="form-wrap">
+
+      <!-- LEFT: checklist -->
+      <div class="reveal">
+        <span class="label">Cadastro gratuito</span>
+        <h2 class="h2" style="margin-bottom:14px;">Comece a revender <span class="highlight">Oxiquímica</span> agora</h2>
+        <p class="lead">Preencha o formulário e um consultor dedicado entrará em contato com seu plano personalizado.</p>
+        <div class="form-checklist">
+          <div class="form-check-item">
+            <div class="form-check-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="form-check-text"><strong>Baixo investimento inicial:</strong> cadastro gratuito e pedido mínimo de apenas R$ 1.000,00</p>
+          </div>
+          <div class="form-check-item">
+            <div class="form-check-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="form-check-text"><strong>Frete grátis em rotas:</strong> consulte disponibilidade na sua região</p>
+          </div>
+          <div class="form-check-item">
+            <div class="form-check-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="form-check-text"><strong>Catálogo + materiais digitais:</strong> tudo pronto pra divulgar</p>
+          </div>
+          <div class="form-check-item">
+            <div class="form-check-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="form-check-text"><strong>Consultor exclusivo:</strong> suporte em toda sua jornada</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: form card -->
+      <div class="reveal reveal-d1">
+        <div class="form-card">
+          <div class="form-badge">Vagas limitadas na sua região</div>
+
+          <!-- ═══ FLUXO COMPLETO: DADOS + QUALIFICAÇÃO ═══ -->
+          <div id="js-quiz">
+            <div class="quiz-progress" aria-hidden="true">
+              <div class="quiz-progress__bar" id="js-quiz-bar" style="width:25%"></div>
+            </div>
+
+            <!-- Step 1: Dados de contato -->
+            <div class="quiz-step" data-step="1">
+              <div class="quiz-step__num">Etapa 1 de 4</div>
+              <h3 class="quiz-step__title">Quero ser revendedor</h3>
+              <p class="quiz-step__sub">Comece preenchendo seus dados de contato.</p>
+
+              <div class="fgroup" id="fg-nome">
+                <label for="f-nome">Nome completo <span aria-hidden="true" style="color:#dc2626">*</span></label>
+                <input type="text" id="f-nome" name="nome" placeholder="Ex: João da Silva" autocomplete="name" required>
+                <p class="err-msg" role="alert">Por favor, informe seu nome completo.</p>
+              </div>
+
+              <div class="fgroup" id="fg-tel">
+                <label for="f-tel">WhatsApp <span aria-hidden="true" style="color:#dc2626">*</span></label>
+                <input type="tel" id="f-tel" name="telefone" placeholder="(35) 99999-9999" autocomplete="tel" inputmode="tel" required>
+                <p class="err-msg" role="alert">Informe um WhatsApp válido.</p>
+              </div>
+
+              <div class="fgroup" id="fg-obj">
+                <label for="f-obj">O que você busca? <span aria-hidden="true" style="color:#dc2626">*</span></label>
+                <select id="f-obj" name="objetivo" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="renda-extra">Renda extra para complementar meu salário</option>
+                  <option value="negocio">Montar meu próprio negócio de revenda</option>
+                  <option value="loja">Vender em minha loja ou estabelecimento</option>
+                  <option value="ampliar">Já revendo e quero ampliar o portfólio</option>
+                </select>
+                <p class="err-msg" role="alert">Selecione uma opção.</p>
+              </div>
+
+              <button type="button" class="btn btn--primary btn--lg btn--full" id="js-step1-next">
+                Continuar
+              </button>
+            </div>
+
+            <!-- Step 2: Cidade/UF -->
+            <div class="quiz-step" data-step="2" hidden>
+              <button type="button" class="quiz-back" data-back="1">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+                Voltar
+              </button>
+              <div class="quiz-step__num">Etapa 2 de 4</div>
+              <h3 class="quiz-step__title">Qual é a sua região?</h3>
+              <p class="quiz-step__sub">Cidade e estado onde você pretende revender.</p>
+              <div class="fgroup" id="fg-regiao">
+                <label for="f-regiao">Cidade/UF <span aria-hidden="true" style="color:#dc2626">*</span></label>
+                <input type="text" id="f-regiao" placeholder="Ex: Varginha/MG" autocomplete="address-level2">
+                <p class="err-msg" role="alert">Informe sua cidade.</p>
+              </div>
+              <button type="button" class="btn btn--primary btn--lg btn--full" id="js-step2-next">
+                Continuar
+              </button>
+            </div>
+
+            <!-- Step 3: CNPJ -->
+            <div class="quiz-step" data-step="3" hidden>
+              <button type="button" class="quiz-back" data-back="2">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+                Voltar
+              </button>
+              <div class="quiz-step__num">Etapa 3 de 4</div>
+              <h3 class="quiz-step__title">Você tem CNPJ?</h3>
+              <p class="quiz-step__sub">Não tem problema se não tiver — atendemos PF e PJ.</p>
+              <div class="quiz-options">
+                <button type="button" class="quiz-opt" data-q="cnpj" data-v="sim">Sim, tenho CNPJ</button>
+                <button type="button" class="quiz-opt" data-q="cnpj" data-v="nao">Não tenho</button>
+              </div>
+            </div>
+
+            <!-- Step 4: Investimento (gate final + submit) -->
+            <div class="quiz-step" data-step="4" hidden>
+              <button type="button" class="quiz-back" data-back="3">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+                Voltar
+              </button>
+              <div class="quiz-step__num">Etapa 4 de 4</div>
+              <div class="quiz-info">
+                <strong>Como funciona:</strong> você investe aproximadamente <strong>R$ 1.000</strong> no primeiro pedido e revende os produtos na sua região — em residências, empresas, lava-rápidos, restaurantes, oficinas e outros estabelecimentos.
+              </div>
+              <h3 class="quiz-step__title">Você conseguiria investir R$ 1.000 hoje?</h3>
+              <div class="quiz-options">
+                <button type="button" class="quiz-opt" data-q="invest" data-v="sim" id="js-invest-sim">Sim, posso investir agora</button>
+                <button type="button" class="quiz-opt" data-q="invest" data-v="nao">Ainda não consigo esse valor</button>
+              </div>
+              <p class="form-privacy" style="margin-top:18px;">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Seus dados estão protegidos. Não enviamos spam.
+              </p>
+            </div>
+          </div>
+
+          <!-- Success state -->
+          <div class="form-success" id="js-success" aria-live="polite">
+            <div class="form-success__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Cadastro realizado!</h3>
+            <p>Um consultor vai entrar em contato pelo WhatsApp em breve. Fique de olho!</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FINAL CTA ═══════════════════ -->
+<section class="section section--grad final-cta">
+  <div class="wrap">
+    <h2 class="h2 reveal">Pronto para começar a lucrar com limpeza profissional?</h2>
+    <p class="lead lead--light reveal reveal-d1" style="max-width:560px;margin:12px auto 28px;">Junte-se aos revendedores Oxiquímica. Preço de fábrica, suporte completo e margens que realmente fazem diferença.</p>
+    <div class="final-cta__btns reveal reveal-d2">
+      <a href="#cadastro" class="btn btn--white btn--lg">Cadastre-se gratuitamente</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">
+          <img src="logo.png" alt="Oxi Química Varginha">
+        </div>
+        <p class="footer__desc">Fábrica de produtos de limpeza profissional. Atendendo 9 segmentos com qualidade ANVISA e entrega na sua região.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Contato</div>
+        <a href="tel:+5535997148855" class="footer__link">(35) 99714-8855</a>
+        <a href="mailto:contato@oxiquimicavarginha.com.br" class="footer__link">contato@oxiquimicavarginha.com.br</a>
+        <span class="footer__link">Av. Dr. Módena, 723 – Fátima<br>Varginha/MG · CEP 37010-085</span>
+      </div>
+      <div>
+        <div class="footer__col-title">Horário</div>
+        <span class="footer__link">Seg a Qui: 08h – 17h30</span>
+        <span class="footer__link">Sexta: 08h – 16h30</span>
+        <span class="footer__link">Sábado: 08h – 12h</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Oxiquímica Varginha. Todos os direitos reservados.</span>
+      <span>Desenvolvido por <a href="https://drosagencia.com.br" style="color:var(--blue-light);">Dros Agência</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════ WHATSAPP FAB ═══════════════════ -->
+
+<!-- ═══════════════════ SIMULADOR DE GANHOS (desativado) ═══════════════════
+<div class="hero__visual">
+  <div class="hero__card" style="position:relative;">
+    <div class="floating-badge">Cadastro gratuito</div>
+    <div class="hero__card-title">Simulador de ganhos</div>
+    <div class="hero__card-sub">Veja quanto você pode faturar por mês</div>
+    <div style="margin-bottom:16px;">
+      <label>Quantos clientes por semana?</label>
+      <input type="range" id="simClientes" min="5" max="40" value="15" style="width:100%;accent-color:#2563eb;">
+      <div style="display:flex;justify-content:space-between;font-size:.78rem;color:#94a3b8;"><span>5</span><span id="simClientesVal">15</span><span>40</span></div>
+    </div>
+    <div style="margin-bottom:20px;">
+      <label>Ticket médio por venda</label>
+      <input type="range" id="simTicket" min="30" max="200" value="80" step="10" style="width:100%;accent-color:#2563eb;">
+      <div style="display:flex;justify-content:space-between;font-size:.78rem;color:#94a3b8;"><span>R$30</span><span id="simTicketVal">R$80</span><span>R$200</span></div>
+    </div>
+    <div style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:14px;padding:20px;text-align:center;">
+      <div style="font-size:.85rem;color:#475569;margin-bottom:4px;">Seu faturamento estimado/mês</div>
+      <div id="simResult" style="font-size:2.2rem;font-weight:900;color:#2563eb;">R$ 4.800</div>
+      <div style="font-size:.78rem;color:#059669;font-weight:600;margin-top:4px;">Com margem líquida de ~65%</div>
+    </div>
+  </div>
+</div>
+// const simClientes = document.getElementById('simClientes');
+// const simTicket   = document.getElementById('simTicket');
+// function updateSim() {
+//   const faturamento = parseInt(simClientes.value) * parseInt(simTicket.value) * 4;
+//   document.getElementById('simClientesVal').textContent = simClientes.value;
+//   document.getElementById('simTicketVal').textContent   = 'R$' + simTicket.value;
+//   document.getElementById('simResult').textContent      = 'R$ ' + faturamento.toLocaleString('pt-BR');
+// }
+// simClientes.addEventListener('input', updateSim);
+// simTicket.addEventListener('input', updateSim);
+═══════════════════ -->
+
+<script>
+  /* ── UTM capture: salva no sessionStorage na 1a visita; mantém em navegações internas ── */
+  (function captureUtms() {
+    const KEYS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'];
+    const params = new URLSearchParams(window.location.search);
+    let stored;
+    try { stored = JSON.parse(sessionStorage.getItem('lp_utms') || '{}'); } catch (_) { stored = {}; }
+    let updated = false;
+    KEYS.forEach(k => {
+      const v = params.get(k);
+      if (v && !stored[k]) { stored[k] = v; updated = true; }
+    });
+    if (!stored._first_landing) { stored._first_landing = window.location.href; updated = true; }
+    if (!stored._referrer && document.referrer) { stored._referrer = document.referrer; updated = true; }
+    if (updated) {
+      try { sessionStorage.setItem('lp_utms', JSON.stringify(stored)); } catch (_) {}
+    }
+    window.__lpUtms = stored;
+  })();
+
+  /* ── Header scroll ── */
+  const hdr = document.getElementById('js-header');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', window.scrollY > 16), { passive:true });
+
+  /* ── Scroll reveal ── */
+  const ro = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+    btn.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); } });
+  });
+
+  /* ── Phone mask ── */
+  document.getElementById('f-tel').addEventListener('input', function() {
+    let v = this.value.replace(/\D/g,'').slice(0,11);
+    if (v.length > 6) v = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+    else if (v.length > 2) v = '(' + v.slice(0,2) + ') ' + v.slice(2);
+    else if (v.length) v = '(' + v;
+    this.value = v;
+  });
+
+  /* ── Fluxo: Dados → Cidade → CNPJ → Investimento (gate + submit) ── */
+  const quizState = { nome:'', telefone:'', objetivo:'', regiao:'', cnpj:'', invest:'' };
+  const quizBar = document.getElementById('js-quiz-bar');
+  const quizSteps = document.querySelectorAll('#js-quiz .quiz-step');
+  const TOTAL_STEPS = 4;
+
+  function showQuizStep(n) {
+    quizSteps.forEach(s => { s.hidden = (parseInt(s.dataset.step, 10) !== n); });
+    quizBar.style.width = (n * (100 / TOTAL_STEPS)) + '%';
+    /* Scroll suave pro topo do card no mobile */
+    if (window.matchMedia && window.matchMedia('(max-width:1024px)').matches) {
+      const card = document.querySelector('.form-card');
+      if (card) card.scrollIntoView({ behavior:'smooth', block:'start' });
+    }
+  }
+
+  /* Validação inline */
+  function validateField(input) {
+    const fg = input.closest('.fgroup');
+    if (!fg) return true;
+    const ok = input.checkValidity() && input.value.trim() !== '';
+    fg.classList.toggle('has-error', !ok);
+    input.classList.toggle('error', !ok);
+    input.setAttribute('aria-invalid', String(!ok));
+    return ok;
+  }
+  ['f-nome','f-tel','f-obj','f-regiao'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener('blur',  () => validateField(el));
+    el.addEventListener('input', () => { if (el.classList.contains('error')) validateField(el); });
+  });
+
+  /* Botões "Voltar" */
+  document.querySelectorAll('.quiz-back').forEach(btn => {
+    btn.addEventListener('click', () => showQuizStep(parseInt(btn.dataset.back, 10)));
+  });
+
+  /* Step 1 → Continuar: valida nome + telefone + objetivo */
+  document.getElementById('js-step1-next').addEventListener('click', () => {
+    const fields = ['f-nome','f-tel','f-obj'].map(id => document.getElementById(id));
+    const allOk = fields.map(validateField).every(Boolean);
+    if (!allOk) {
+      const first = fields.find(f => f.classList.contains('error'));
+      if (first) first.focus();
+      return;
+    }
+    quizState.nome     = document.getElementById('f-nome').value.trim();
+    quizState.telefone = document.getElementById('f-tel').value.trim();
+    quizState.objetivo = document.getElementById('f-obj').value;
+    showQuizStep(2);
+  });
+
+  /* Step 2 → Continuar: valida cidade/UF */
+  document.getElementById('js-step2-next').addEventListener('click', () => {
+    const inp = document.getElementById('f-regiao');
+    const fg  = document.getElementById('fg-regiao');
+    if (inp.value.trim().length < 2) {
+      fg.classList.add('has-error');
+      inp.classList.add('error');
+      inp.focus();
+      return;
+    }
+    fg.classList.remove('has-error');
+    inp.classList.remove('error');
+    quizState.regiao = inp.value.trim();
+    showQuizStep(3);
+  });
+
+  /* Click nos botões de quiz (CNPJ e Investimento) */
+  document.querySelectorAll('.quiz-opt').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const q = btn.dataset.q;
+      const v = btn.dataset.v;
+      quizState[q] = v;
+
+      if (q === 'cnpj') {
+        showQuizStep(4);
+        return;
+      }
+      if (q === 'invest') {
+        if (v === 'nao') {
+          /* Desqualificado: NÃO envia lead. Redireciona pra página de pedido mínimo
+             (que vai disparar o evento custom no Pixel pra você excluir esse público). */
+          window.location.href = 'pedido-minimo.html';
+          return;
+        }
+        /* Qualificado: envia lead */
+        submitLead(btn);
+      }
+    });
+  });
+
+  /* Submit final — só roda quando o usuário passou em todas as qualificações */
+  function submitLead(triggerBtn) {
+    if (triggerBtn) {
+      triggerBtn.disabled = true;
+      triggerBtn.textContent = 'Enviando…';
+      triggerBtn.style.pointerEvents = 'none';
+    }
+
+    /* Event ID compartilhado entre Pixel (browser) e CAPI (server, futuro) — evita duplicidade */
+    const eventId = 'lead_' + Date.now() + '_' + Math.random().toString(36).slice(2, 10);
+
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead', {}, { eventID: eventId });
+    }
+    if (typeof gtag === 'function') {
+      gtag('event', 'generate_lead', { event_category: 'form', event_label: 'cadastro_revendedor' });
+    }
+
+    const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzylMDMt3C746xYleRpFm6FH0fL2sPS4OFl5GFDJLJy1Flnqi9zWIoBsieyBZok_Q1eQA/exec';
+    const utms = (window.__lpUtms) || {};
+    const payload = {
+      nome:      quizState.nome,
+      telefone:  quizState.telefone,
+      cidade:    quizState.regiao,
+      objetivo:  quizState.objetivo,
+      tem_cnpj:  quizState.cnpj,
+      regiao:    quizState.regiao,
+      data:      new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }),
+      event_id:  eventId,
+      fbp:       (document.cookie.match(/_fbp=([^;]+)/) || [])[1] || '',
+      fbc:       (document.cookie.match(/_fbc=([^;]+)/) || [])[1] || '',
+      user_agent: navigator.userAgent,
+      page_url:  window.location.href,
+      utm_source:    utms.utm_source    || '',
+      utm_medium:    utms.utm_medium    || '',
+      utm_campaign:  utms.utm_campaign  || '',
+      utm_content:   utms.utm_content   || '',
+      utm_term:      utms.utm_term      || '',
+      gclid:         utms.gclid         || '',
+      fbclid:        utms.fbclid        || '',
+      first_landing: utms._first_landing || '',
+      referrer:      utms._referrer      || ''
+    };
+
+    const target = 'obrigado.html?eid=' + encodeURIComponent(eventId);
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(() => { window.location.href = target; })
+      .catch(() => { window.location.href = target; });
+  }
+</script>
+
+</body>
+</html>
